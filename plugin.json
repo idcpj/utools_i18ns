@@ -1,0 +1,32 @@
+{
+  "pluginName": "i18ns",
+  "description": "国际化翻译插件",
+  "preload": "preload.js",
+  "main": "index.html",
+  "version": "0.0.1",
+  "logo": "logo.png",
+  "author": "idcpj",
+  "homepage": "https://github.com/idcpj",
+  "platform": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "features": [
+    {
+      "code": "i18n",
+      "explain": "国际化翻译插件",
+      "cmds": [
+        "翻译",
+        "i8ns",
+        {
+          "type": "over",
+          "label": "文本正则匹配",
+          "match": "/xxx/i",
+          "minLength": 1,
+          "maxLength": 10
+        }
+      ]
+    }
+  ]
+}

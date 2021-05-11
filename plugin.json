@@ -21,7 +21,7 @@
         "i8ns",
         {
           "type": "over",
-          "label": "文本正则匹配",
+          "label": "国际化翻译正则匹配",
           "match": "/xxx/i",
           "minLength": 1,
           "maxLength": 10

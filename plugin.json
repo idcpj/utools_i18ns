@@ -2,7 +2,6 @@
   "pluginName": "i18ns",
   "description": "国际化翻译插件",
   "preload": "preload.js",
-  "main": "index.html",
   "version": "0.0.1",
   "logo": "logo.png",
   "author": "idcpj",

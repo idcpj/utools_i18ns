@@ -2,7 +2,7 @@
   "pluginName": "i18ns",
   "description": "国际化翻译插件",
   "preload": "preload.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "logo": "logo.png",
   "author": "idcpj",
   "homepage": "https://github.com/idcpj",
@@ -17,13 +17,12 @@
       "explain": "国际化翻译插件",
       "cmds": [
         "翻译",
-        "i8ns",
         {
           "type": "over",
           "label": "国际化翻译正则匹配",
-          "match": "/xxx/i",
+          "match": "/.*/i",
           "minLength": 1,
-          "maxLength": 10
+          "maxLength": 100
         }
       ]
     }

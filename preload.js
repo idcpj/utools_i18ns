@@ -51,6 +51,7 @@ function show(search, callbackSetList){
                 })
 
             }
+            // alert(JSON.stringify(result))
 
             callbackSetList(result)
 
@@ -76,13 +77,16 @@ window.exports = {
             // 进入插件时调用（可选）
             enter: (action, callbackSetList) => {
                 show(action.payload,callbackSetList)
-
+            },
+            search: (action, searchWord, callbackSetList) => {
+                show(searchWord,callbackSetList)
 
             },
             // 用户选择列表中某个条目时被调用
             select: (action, itemData, callbackSetList) => {
                 window.utools.hideMainWindow()
                 utools.copyText(itemData.description)
+                // window.utools.outPlugin()
 
             },
             // 子输入框为空时的占位符，默认为字符串"搜索"

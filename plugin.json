@@ -1,6 +1,6 @@
 {
   "pluginName": "i18ns",
-  "description": "国际化翻译插件",
+  "description": "程序员翻译",
   "preload": "preload.js",
   "version": "0.0.2",
   "logo": "logo.png",
@@ -11,15 +11,19 @@
     "darwin",
     "linux"
   ],
+  "main": "index.html",
+  "development": {
+    "main": "http://127.0.0.1:7788"
+  },
   "features": [
     {
       "code": "i18n",
-      "explain": "国际化翻译插件",
+      "explain": "程序员翻译",
       "cmds": [
         "翻译",
         {
           "type": "over",
-          "label": "国际化翻译正则匹配",
+          "label": "程序员翻译",
           "match": "/.*/i",
           "minLength": 1,
           "maxLength": 100
